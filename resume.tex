@@ -1,0 +1,204 @@
+%-------------------------
+% Resume in Latex
+% Author : Kasier Roy S. Narandan
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\begin{center}
+    \textbf{\Huge \scshape Kasier Roy S. Narandan} \\ \vspace{1pt}
+    \small xxxxxxxxxxxx $|$ \href{kasierroy@gmail.com}{\underline{kasierroy@gmail.com}} $|$
+    \href{https://linkedin.com/in/kasierroy}{\underline{linkedin.com/in/kasierroy}} $|$
+    \href{https://github.com/kasierroy}{\underline{github.com/kasierroy}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Cebu Institute of Technology - University}{June 2014 -- April 2019}
+      {Bachelor of Science in Computer Engineering (Cum Laude)}{Cebu, PH}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, C\#, Python, Bash, Rust, Assembly} \\
+     \textbf{VCS}{: Git, Svn, Github, Gitlab, Gerrit, Jenkins} \\
+     \textbf{Debugger}{: Valgrind, gdb, Visual Studio CPU/Memory Profiler}\\
+     \textbf{Coding Principle}{: SOLID, Design Patterns } \\
+     \textbf{Frameworks}{: WPF, Yocto, MSTest} \\
+     \textbf{IDE}{: Visual Studio, vim, atom} \\
+     \textbf{Libraries}{: UIAutomation, boost, nuget} \\
+     \textbf{OS}{: Linux, Windows}
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Research and Development Engineer}{Sept. 2022 -- Present}
+      {Advanced World Solutions, Inc.}{Cebu, PH}
+      \resumeItemListStart
+        \resumeItem{Refactored an entire project code framework to use proper Software Design Patterns.}
+        \resumeItem{Developed Windows Service applications using C\#.}
+        \resumeItem{Developed WPF applications in C\# .NET Framework.}
+        \resumeItem{Developed Windows DLL library using C++.}
+        \resumeItem{Collaborated with hardware team to ensure successful software development.}
+        \resumeItem{Introduced CI/CD in existing projects.}
+        \resumeItem{Introduced TDD in existing projects.}
+        \resumeItem{Fixed hot-issue bugs reported by client.}
+        \resumeItem{Participated in code reviews and provided feedback to peers.}
+        \resumeItem{Reduced memory usage of existing applications by 20\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Firmware Engineer}{April 2019 -- Sept. 2022}
+      {Lexmark Research and Development Corporation}{Cebu, PH}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented printer features using C/C++.}
+        \resumeItem{Designed and implemented special printer product client requests.}
+        \resumeItem{Automated integration and unit tests of firmware submodules using C++ and Python.}
+        \resumeItem{Automated firmware delivery processes using Bash and Python.}
+        \resumeItem{Collaborated with cross-functional teams to ensure successful printer feature development.}
+        \resumeItem{Used SNMP and NPAP printer protocols.}
+        \resumeItem{Fixed crash issues using gdb debugging tool.}
+        \resumeItem{Fixed memory leak issues using valgrind tool.}
+        \resumeItem{Fixed valgrind and coverity issues.}
+        \resumeItem{Fixed Code RED and field issues.}
+        \resumeItem{Participated in code reviews and design discussions.}
+        \resumeItem{Provided daily triage and recommendation of bug issues.}
+        \resumeItem{Reduced automated tests duration by at least 40\%.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Part-time College Instructor}{Nov 2019 -- April 2020}
+      {Cebu Institute of Technology - University}{Cebu, PH}
+      \resumeItemListStart
+        \resumeItem{Taught embedded programming in microcontrollers using C.}
+        \resumeItem{Taught embedded programming in microcontrollers in Assembly.}
+        \resumeItem{Taught computer interfacing from microcontrollers using UART, Serial, & other protocols.}
+        \resumeItem{Taught basic C programming language.}
+        \resumeItem{Taught basic logic circuits.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+% TBA
+%-----------PROJECT-----------
+%\section{Project}
+%  \resumeSubHeadingListStart
+%    \resumeProjectHeading
+%      {\textbf{PROJECT #1} $|$ \emph{Python, Git, Firebase}}{June 2018 -- April 2019}
+%      \resumeItemListStart
+%            \resumeItem{}
+%      \resumeItemListEnd
+%  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
